@@ -2,8 +2,7 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.stream.Collectors;
+
 
 public class TestandoListas {
 
@@ -46,6 +45,5 @@ public class TestandoListas {
 		
 		Collections.sort(aulas);
 		System.out.println("Depois de ordenado: " + aulas);
-
 	}
 }
