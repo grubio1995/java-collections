@@ -1,6 +1,5 @@
 package br.com.alura;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -27,8 +26,18 @@ public class Curso {
 	public String getInstrutor() {
 		return instrutor;
 	}
-	
+
 	public void adiciona(Aula aula) {
 		this.aulas.add(aula);
 	}
+
+	public Integer getTempoTotal() {
+		return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+	}
+
+	@Override
+	public String toString() {
+		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", aula:" + this.aulas + "]";
+	}
+
 }
