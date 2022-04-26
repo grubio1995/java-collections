@@ -43,12 +43,16 @@ public class Curso {
 	}
 	
 	public void matricula(Aluno aluno) {
-		this.alunos.add(aluno);
+		this.nome.hashCode();
 	}
 
 	@Override
 	public String toString() {
 		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", aula:" + this.aulas + "]";
+	}
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 
 }
