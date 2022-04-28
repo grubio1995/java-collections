@@ -43,7 +43,7 @@ public class Curso {
 	}
 	
 	public void matricula(Aluno aluno) {
-		this.nome.hashCode();
+		this.alunos.add(aluno);
 	}
 
 	@Override
